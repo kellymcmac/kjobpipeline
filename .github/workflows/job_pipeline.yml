@@ -1,0 +1,40 @@
+name: Job Pipeline
+
+on:
+  schedule:
+    # Runs once a day at 09:00 UTC. Cron in GitHub Actions is ALWAYS in UTC.
+    # 09:00 UTC is roughly 04:00 US Central / 01:00 US Pacific / 10:00 London.
+    # To pick a different time, change the two numbers below ("minute hour").
+    # Helful tool for building the schedule: https://crontab.guru
+    - cron: "0 9 * * *"
+  # Also allow manual runs from the Actions tab (great for the first test run).
+  workflow_dispatch:
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      # Opt into Node 24 for actions still defaulting to deprecated Node 20.
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
+          AIRTABLE_BASE_ID: ${{ secrets.AIRTABLE_BASE_ID }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python -m pipeline.main
