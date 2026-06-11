@@ -219,7 +219,7 @@ REMOTE_KEYWORDS = [
 # Target companies for ATS polling.
 # Format: (display_name, ats, slug)
 # - display_name: how it appears in Airtable
-# - ats: 'greenhouse' | 'lever' | 'ashby' | 'smartrecruiters'
+# - ats: 'greenhouse' | 'lever' | 'ashby' | 'smartrecruiters' | 'workable'
 # - slug: the company's ATS path slug (the part after the ATS domain in the
 #         company's careers-page URL)
 #
@@ -229,7 +229,7 @@ REMOTE_KEYWORDS = [
 #   Lever:            jobs.lever.co/<slug>
 #   Ashby:            jobs.ashbyhq.com/<slug>
 #   SmartRecruiters:  jobs.smartrecruiters.com/<slug>
-#   Workable:         https://jobs.workable.com/<slug>
+#   Workable:         jobs.workable.com/<slug>
 #
 # Status legend in comments (from prior runs):
 #   [ok]    = verified returning postings
@@ -302,8 +302,6 @@ TARGET_COMPANIES = [
     ("Arcadia", "greenhouse", "arcadiacareers"),        # [?]
     ("Pachama", "lever", "pachama"),                    # [?]
     ("Palmetto", "greenhouse", "palmetto"),             # [?]
-    ("Crusoe Energy", "lever", "crusoe"),               # [?]
-    ("Xpansiv", "lever", "xpansiv"),                    # [?]
     ("Banyan Infrastructure", "greenhouse", "banyaninfrastructure"), # [?]
 ]
 
