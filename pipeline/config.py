@@ -25,51 +25,32 @@ LOOKBACK_DAYS = 1
 # -----------------------------------------------------------------------------
 TARGET_TITLES = [
     # Senior Data Analyst (and Sr/Lead/Staff/Principal variants)
-    "senior data analyst",
-    "sr data analyst",
-    "sr. data analyst",
-    "lead data analyst",
-    "staff data analyst",
-    "principal data analyst",
-
-    # Analytics Engineer (any level)
-    "analytics engineer",
-
-    # Data Scientist (rely on EXCLUDE below to filter junior/entry)
-    "data scientist",
-
-    # Specialty Senior Analyst tracks
-    "senior product analyst",
-    "sr product analyst",
-    "sr. product analyst",
-    "senior business analyst",
-    "sr business analyst",
-    "sr. business analyst",
-    "senior operations analyst",
-    "sr operations analyst",
-    "sr. operations analyst",
-    "senior insights analyst",
-    "sr insights analyst",
-    "sr. insights analyst",
-
-    # Strategy / Operations Analyst
-    "strategy and operations",
-    "strategy & operations",
-    "strategy analyst",
-
-    # Fraud / Risk / Disputes specialist tracks (example domain, edit freely)
-    "fraud analyst",
-    "senior fraud analyst",
-    "sr fraud analyst",
-    "disputes specialist",
-    "disputes analyst",
-
-    # Manager tracks
-    "analytics manager",
-    "insights manager",
-    "data analytics manager",
-    "continuous improvement analyst",
-    "continuous improvement manager",
+    "Process Consultant",
+    "Process Optimization Manager",
+    "Process Specialist",
+    "Process Optimization Specialist"
+    "Process Improvement",
+    "Process Optimization",
+    "Process Improvement
+    "Process Optimization Lead",
+    "Process Improvement Manager",
+    "Process Improvement Lead",
+    "Process Excellence Manager",
+    "Process Transformation Lead",
+    "Workflow Transformation Analyst",
+    "Continuous Improvement Manager",
+    "Operations Program Manager",
+    "Operations Enablement Manager",
+    "Delivery Operations Manager",
+    "Business Operations Manager",
+    "Business Process Manager",
+    "Program Manager Operations",
+    "Senior Program Manager",
+    "Operational Excellence Manager",
+    "Operational Excellence Lead",
+    "Customer Operations Manager",
+    "People Process Optimization Specialist",
+    "Six Sigma Program Manager"
 ]
 
 # -----------------------------------------------------------------------------
@@ -104,6 +85,7 @@ EXCLUDE_TITLE_TERMS = [
     "ml engineer",
     "machine learning engineer",
     "research scientist",
+    "fraud",
 ]
 
 # -----------------------------------------------------------------------------
@@ -134,72 +116,76 @@ EXCLUDE_TITLE_TERMS = [
 # if you add short keywords of your own.
 # -----------------------------------------------------------------------------
 CORE_STACK_KEYWORDS = [
-    # Modern analytics/data stack (example)
-    "snowflake",
-    "looker",
-    "lookml",
-    "tableau",
-    "dbt",
-    "airflow",
-    "lean six sigma",
-    "dmaic",
-    # "mode" matches only as a standalone word (not inside "model"/"modern").
-    "mode",
-    # Enterprise BI/analytics tools (cross-industry peers of the stack above)
-    "power bi",
-    "powerbi",
-    "sql server",
-    "qlik",
-    "sas programming",  # phrased to avoid matching "Kansas"/"SaaS"; do NOT shorten to bare "sas"
-    "base sas",         # common posting phrasing for the SAS language
+    # continuous process improvement stack (example)
+    "Continuous Process Improvement",
+    "continuous improvement",
+    "Process Optimization",
+    "Process Transformation",
+    "Workflow Design",
+    "Operating Model Design",
+    "Workflow Architecture",
+    "Business Process Redesign",
+    "Cross-Functional Program Management",
+    "Lean Six Sigma Black Belt",
+    "DMAIC",
+    "FMEA",
+    "SIPOC",
+    "Value Stream Mapping",
+    "Kaizen",
+    "Root Cause Analysis",
+    "Operational Excellence",
+    "Control Plans",
+    "Waste Elimination",
+    "AI-Native Workflow Design",
+    "AI-Enabled Workflows",
+    "Workflow Automation",
+
 ]
 MIN_CORE_STACK_MATCHES = 1
 
 BROAD_SKILL_KEYWORDS = [
-    # SQL is broad but expected; a reasonable Tier 2 signal, not a Tier 1 differentiator
+    # overall
+    "KPI Development",
+    "Experiment Governance",
+    "Operational Readiness",
+    "Impact Modeling",
+    "Process Documentation",
+    "Agentic AI",
+    "Generative AI",
+    "Prompt Engineering",
+    "AI Governance",
+    "Support Automation",
+    "Process Digitization",
+    "Automation Strategy",
+    "Intelligent Process Automation",
+    "Business Operations",
+    "Operations Strategy",
+    "Process Excellence",
+    "Product Operations",
+    "Strategic Planning",
+    "Global Operations",
+    "Scaled Operations",
+    "Data-Driven Decision Making",
+    "Analytics & Reporting",
+    "Voice of Customer",
+    "Customer Experience",
+    "Agile",
+    "Scrum",
+    "Tableau",
+    "Salesforce",
+    "Zendesk",
+    "Snowflake",
+    "SQL",
+    "Jira",
+    "Lucidchart",
+    "Airtable",
+    "Smartsheet",
+    "Confluence",
+    "analysis",
+    "data analysis",
     "sql",
-    "etl",
-    "elt",
-    "data warehouse",
-    "data model",
-    "semantic layer",
-    # Domain terms (example: fintech/payments). Swap for your own industry
-    "fraud",
-    "risk",
-    "disputes",
-    "chargeback",
-    # Methodology
-    "experimentation",
-    "a/b test",
-    "ab test",
-    "hypothesis test",
-    "root cause",
-    "continuous improvement",
-    "process improvement",
-    # Statistical process control / quality (strong cross-industry signal:
-    # manufacturing, healthcare, operations)
-    "statistical process control",
-    "control chart",
-    "spc",              # short, but low collision risk; watch the logs on the first run
-    "kaizen",
-    "six sigma",
-    "data governance",
-    "data quality",
-    # Ingestion / pipeline tooling
-    "fivetran",
-    # Modern AI awareness
-    "generative ai",
-    "llm",
-    "agentic",
-    "prompt engineering",
-    "openai",
-    "anthropic",
-    "claude",
-    "chatgpt",
-    # Self-serve / democratization
-    "self-serve",
-    "data democratization",
-    "data literacy",
+    "data",
+
 ]
 MIN_BROAD_SKILL_MATCHES = 3
 
@@ -215,7 +201,7 @@ MIN_BROAD_SKILL_MATCHES = 3
 # list more than one, e.g. ["chicago", "milwaukee"]. To keep ONLY remote roles
 # and drop all onsite/hybrid, set this to an empty list: []
 ALLOWED_ONSITE_LOCATIONS = [
-    "chicago",
+    "nashville",
 ]
 
 # Substrings that count as a remote signal when found in the title or location string.
@@ -226,6 +212,7 @@ REMOTE_KEYWORDS = [
     "wfh",
     "distributed",
     "fully remote",
+    "hybrid",
 ]
 
 # -----------------------------------------------------------------------------
@@ -249,59 +236,85 @@ REMOTE_KEYWORDS = [
 #   [?]     = unverified guess; will just log a 404 if wrong, no harm
 # -----------------------------------------------------------------------------
 TARGET_COMPANIES = [
-    # Fintech / Payments
-    ("Stripe", "greenhouse", "stripe"),                  # [ok]
-    ("Plaid", "lever", "plaid"),                         # [fixed] was Greenhouse, actually on Lever
-    ("Mercury", "ashby", "mercury"),                     # [ok]
-    ("Brex", "greenhouse", "brex"),                      # [ok]
-    ("Ramp", "ashby", "ramp"),                           # [ok]
-    ("Chime", "greenhouse", "chime"),                    # [ok]
-    ("Affirm", "greenhouse", "affirm"),                  # [ok]
-    ("Robinhood", "greenhouse", "robinhood"),            # [ok]
-    ("Marqeta", "greenhouse", "marqeta"),                # [ok]
-    ("Modern Treasury", "ashby", "moderntreasury"),      # [fixed] moved from Greenhouse to Ashby
+    # Health/Wellness
+    ("Whoop", "greenhouse", "whoop"),                   # [?]
+    ("Oura", "greenhouse", "oura"),                     # [?]
+    ("Eight Sleep", "ashby", "eightsleep"),             # [?]
+    ("Headspace", "greenhouse", "hs"),                  # [?]
+    ("Calm", "greenhouse", "calm"),                     # [?]
+    ("Strava", "ashby", "strava"),                      # [?]
 
     # Tech / SaaS
-    ("Notion", "ashby", "notion"),                       # [ok]
-    ("Linear", "ashby", "linear"),                       # [ok]
-    ("Vercel", "greenhouse", "vercel"),                  # [ok]
-    ("Datadog", "greenhouse", "datadog"),                # [ok]
-    ("dbt Labs", "greenhouse", "dbtlabsinc"),            # [?]
-    ("HubSpot", "greenhouse", "hubspot"),                # [ok]
-    ("Asana", "greenhouse", "asana"),                    # [ok]
-    ("Figma", "greenhouse", "figma"),                    # [ok]
-    ("Anthropic", "greenhouse", "anthropic"),            # [ok]
-    ("OpenAI", "ashby", "openai"),                       # [fixed] was Greenhouse, actually on Ashby
+    ("Linear", "ashby", "linear"),                      # [ok]
+    ("Vercel", "greenhouse", "vercel"),                 # [ok]
+    ("Datadog", "greenhouse", "datadog"),               # [ok]
+    ("dbt Labs", "greenhouse", "dbtlabsinc"),           # [?]
+    ("HubSpot", "greenhouse", "hubspot"),               # [ok]
+    ("Asana", "greenhouse", "asana"),                   # [ok]
+    ("Anthropic", "greenhouse", "anthropic"),           # [ok]
+    ("OpenAI", "ashby", "openai"),                      # [ok]
+    ("Airtable", "greenhouse", "airtable"),             # [?]
+    ("Superhuman", "ashby", "superhuman"),              # [?]
+    ("Reddit", "greenhouse", "reddit"),                 # [ok]
 
-    # SmartRecruiters
-    ("Atlassian", "smartrecruiters", "atlassian"),       # [fixed] moved from Lever (returned 0) to SmartRecruiters
-    ("Visa", "smartrecruiters", "visa"),                 # [?] verified slug; first run will confirm
-    ("McDonald's Corporation", "smartrecruiters", "mcdonaldscorporation"),  # [?] verified slug; first run will confirm
+    # Education / Learning
+    ("Teachable", "lever", "teachable"),                # [?]
+    ("Maven", "ashby", "maven"),                        # [?]
+    ("Brilliant", "greenhouse", "brilliant"),           # [?]
+    ("Skillshare", "greenhouse", "skillshare"),         # [?]
+    ("Outschool", "greenhouse", "outschool"),           # [?]
+    ("Coursera", "workday", "coursera"),                # [?]
+    
+    # Creator tools / Design
+    ("Canva", "greenhouse", "canva"),                   # [?]
+    ("Loom", "greenhouse", "loom"),                     # [?]
+    ("Descript", "ashby", "descript"),                  # [?]
+    ("Framer", "ashby", "framer"),                      # [?]
+    ("Gamma", "ashby", "gamma"),                        # [?]
+    ("Miro", "greenhouse", "miro"),                     # [?]
+    ("Runway ML", "ashby", "runway-ml"),                # [?]
+    ("Pitch", "greenhouse", "pitch"),                   # [?]
+    ("Rive", "ashby", "rive"),                          # [?]
+    ("Spline", "ashby", "spline"),                      # [?]
+    ("Pika Labs", "ashby", "pika"),                     # [?]
+    ("Lucidchart", "greenhouse", "lucidchart"),         # [?]
 
-    # Marketplaces / Consumer
-    ("DoorDash", "greenhouse", "doordashusa"),           # [fixed] slug is "doordashusa" not "doordash"
-    ("Instacart", "greenhouse", "instacart"),            # [ok]
-    ("Lyft", "greenhouse", "lyft"),                      # [ok]
-    ("Airbnb", "greenhouse", "airbnb"),                  # [ok]
-    ("Pinterest", "greenhouse", "pinterest"),            # [ok]
-    ("Reddit", "greenhouse", "reddit"),                  # [ok]
+    # Travel / Hospitality
+    ("Hipcamp", "lever", "hipcamp"),                    # [?]
+    ("AllTrails", "greenhouse", "alltrails"),           # [?]
+    ("Navan", "greenhouse", "navan"),                   # [?]
+    ("Hopper", "greenhouse", "hopper"),                 # [?]
+    ("Going", "ashby", "going"),                        # [?]
 
     # Healthtech
-    ("Oscar Health", "greenhouse", "oscar"),             # [ok]
-    ("Headway", "ashby", "headway"),                     # [ok]
-    ("Hims", "ashby", "hims-and-hers"),                  # [fixed] moved from Greenhouse to Ashby
-    ("Ro", "lever", "ro"),                               # [fixed] on Lever as "ro"
-    ("Cedar", "greenhouse", "careportalinc"),            # [fixed] on Greenhouse as "careportalinc"
+    ("Oscar Health", "greenhouse", "oscar"),            # [ok]
+    ("Headway", "ashby", "headway"),                    # [ok]
+    ("Hims", "ashby", "hims-and-hers"),                 # [ok]
+    ("Ro", "lever", "ro"),                              # [ok]
+    ("Cedar", "greenhouse", "careportalinc"),           # [ok]
 
     # E-commerce / Retail
-    ("Faire", "greenhouse", "faire"),                    # [ok]
-    ("Klaviyo", "greenhouse", "klaviyo"),                # [ok]
+    ("Faire", "greenhouse", "faire"),                   # [ok]
+    ("Klaviyo", "greenhouse", "klaviyo"),               # [ok]
 
     # Ops / Analytics-heavy
-    ("Carta", "greenhouse", "carta"),                    # [ok]
-    ("Gusto", "greenhouse", "gusto"),                    # [?] may be on its own ATS now
-    ("Vanta", "ashby", "vanta"),                         # [ok]
-    ("Scale AI", "greenhouse", "scaleai"),               # [fixed] was Ashby, actually on Greenhouse
+    ("Carta", "greenhouse", "carta"),                   # [ok]
+    ("Gusto", "greenhouse", "gusto"),                   # [ok]
+    ("Vanta", "ashby", "vanta"),                        # [ok]
+    ("Scale AI", "greenhouse", "scaleai"),              # [ok]
+
+    # Climate / Sustainability
+    ("Overstory", "greenhouse", "overstory"),           # [?]
+    ("Watershed", "ashby", "watershed"),                # [?]
+    ("Arcadia", "greenhouse", "arcadiacareers"),        # [?]
+    ("Pachama", "lever", "pachama"),                    # [?]
+    ("Rubicon Carbon", "greenhouse", "rubicon-carbon"), # [?]
+    ("Raptor Maps", "lever", "raptormaps"),             # [?]
+    ("Rewiring America", "greenhouse", "rewiring-america"), # [?]
+    ("Palmetto", "greenhouse", "palmetto"),             # [?]
+    ("Crusoe Energy", "lever", "crusoe"),               # [?]
+    ("Xpansiv", "greenhouse", "xpansiv"),               # [?]
+    ("Banyan Infrastructure", "greenhouse", "banyan-infrastructure"), # [?]
 ]
 
 # -----------------------------------------------------------------------------
