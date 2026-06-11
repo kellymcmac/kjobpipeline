@@ -229,7 +229,6 @@ REMOTE_KEYWORDS = [
 #   Lever:            jobs.lever.co/<slug>
 #   Ashby:            jobs.ashbyhq.com/<slug>
 #   SmartRecruiters:  jobs.smartrecruiters.com/<slug>
-#   Workable:         jobs.workable.com/<slug>
 #
 # Status legend in comments (from prior runs):
 #   [ok]    = verified returning postings
@@ -269,8 +268,6 @@ TARGET_COMPANIES = [
     ("Descript", "greenhouse", "descript"),             # [?]
     ("Gamma", "ashby", "gamma"),                        # [?]
     ("Runway ML", "ashby", "runway-ml"),                # [?]
-    ("Pitch", "workable", "pitch-software"),            # [?]
-    ("Rive", "workable", "rivecareers"),                # [?]
     ("Pika Labs", "ashby", "pika"),                     # [?]
     ("Lucidchart", "greenhouse", "lucidsoftware"),      # [?]
 
