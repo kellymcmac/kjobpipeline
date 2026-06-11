@@ -31,7 +31,7 @@ TARGET_TITLES = [
     "Process Optimization Specialist"
     "Process Improvement",
     "Process Optimization",
-    "Process Improvement
+    "Process Improvement",
     "Process Optimization Lead",
     "Process Improvement Manager",
     "Process Improvement Lead",
