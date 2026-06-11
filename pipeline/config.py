@@ -229,6 +229,7 @@ REMOTE_KEYWORDS = [
 #   Lever:            jobs.lever.co/<slug>
 #   Ashby:            jobs.ashbyhq.com/<slug>
 #   SmartRecruiters:  jobs.smartrecruiters.com/<slug>
+#   Workable:         https://jobs.workable.com/<slug>
 #
 # Status legend in comments (from prior runs):
 #   [ok]    = verified returning postings
@@ -237,7 +238,7 @@ REMOTE_KEYWORDS = [
 # -----------------------------------------------------------------------------
 TARGET_COMPANIES = [
     # Health/Wellness
-    ("Whoop", "greenhouse", "whoop"),                   # [?]
+    ("Whoop", "lever", "whoop"),                   # [?]
     ("Oura", "greenhouse", "oura"),                     # [?]
     ("Eight Sleep", "ashby", "eightsleep"),             # [?]
     ("Headspace", "greenhouse", "hs"),                  # [?]
@@ -258,32 +259,24 @@ TARGET_COMPANIES = [
     ("Reddit", "greenhouse", "reddit"),                 # [ok]
 
     # Education / Learning
-    ("Teachable", "lever", "teachable"),                # [?]
+    ("Teachable", "greenhouse", "teachablecareers"),    # [?]
     ("Maven", "ashby", "maven"),                        # [?]
-    ("Brilliant", "greenhouse", "brilliant"),           # [?]
-    ("Skillshare", "greenhouse", "skillshare"),         # [?]
+    ("Brilliant", "lever", "brilliant"),                # [?]
     ("Outschool", "greenhouse", "outschool"),           # [?]
-    ("Coursera", "workday", "coursera"),                # [?]
     
     # Creator tools / Design
-    ("Canva", "greenhouse", "canva"),                   # [?]
-    ("Loom", "greenhouse", "loom"),                     # [?]
-    ("Descript", "ashby", "descript"),                  # [?]
-    ("Framer", "ashby", "framer"),                      # [?]
+    ("Canva", "smartrecruiters", "canva"),              # [?]
+    ("Descript", "greenhouse", "descript"),             # [?]
     ("Gamma", "ashby", "gamma"),                        # [?]
-    ("Miro", "greenhouse", "miro"),                     # [?]
     ("Runway ML", "ashby", "runway-ml"),                # [?]
-    ("Pitch", "greenhouse", "pitch"),                   # [?]
-    ("Rive", "ashby", "rive"),                          # [?]
-    ("Spline", "ashby", "spline"),                      # [?]
+    ("Pitch", "workable", "pitch-software"),            # [?]
+    ("Rive", "workable", "rivecareers"),                # [?]
     ("Pika Labs", "ashby", "pika"),                     # [?]
-    ("Lucidchart", "greenhouse", "lucidchart"),         # [?]
+    ("Lucidchart", "greenhouse", "lucidsoftware"),      # [?]
 
     # Travel / Hospitality
-    ("Hipcamp", "lever", "hipcamp"),                    # [?]
-    ("AllTrails", "greenhouse", "alltrails"),           # [?]
-    ("Navan", "greenhouse", "navan"),                   # [?]
-    ("Hopper", "greenhouse", "hopper"),                 # [?]
+    ("AllTrails", "lever", "alltrails"),                # [?]
+    ("Hopper", "ashby", "hopper"),                      # [?]
     ("Going", "ashby", "going"),                        # [?]
 
     # Healthtech
@@ -308,13 +301,10 @@ TARGET_COMPANIES = [
     ("Watershed", "ashby", "watershed"),                # [?]
     ("Arcadia", "greenhouse", "arcadiacareers"),        # [?]
     ("Pachama", "lever", "pachama"),                    # [?]
-    ("Rubicon Carbon", "greenhouse", "rubicon-carbon"), # [?]
-    ("Raptor Maps", "lever", "raptormaps"),             # [?]
-    ("Rewiring America", "greenhouse", "rewiring-america"), # [?]
     ("Palmetto", "greenhouse", "palmetto"),             # [?]
     ("Crusoe Energy", "lever", "crusoe"),               # [?]
-    ("Xpansiv", "greenhouse", "xpansiv"),               # [?]
-    ("Banyan Infrastructure", "greenhouse", "banyan-infrastructure"), # [?]
+    ("Xpansiv", "lever", "xpansiv"),                    # [?]
+    ("Banyan Infrastructure", "greenhouse", "banyaninfrastructure"), # [?]
 ]
 
 # -----------------------------------------------------------------------------
