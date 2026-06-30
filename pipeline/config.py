@@ -24,7 +24,7 @@ LOOKBACK_DAYS = 1
 # EDIT THIS LIST to the titles you actually want.
 # -----------------------------------------------------------------------------
 TARGET_TITLES = [
-    # Senior Data Analyst (and Sr/Lead/Staff/Principal variants)
+    # Process improvement (and Sr/Lead/Staff/Principal variants)
     "Process Consultant",
     "Process Optimization Manager",
     "Process Specialist",
@@ -37,19 +37,34 @@ TARGET_TITLES = [
     "Process Improvement Lead",
     "Process Excellence Manager",
     "Process Transformation Lead",
+    "Customer Journey",
+    "Journey",
+    "Journey mapper",
+    "Journey mapping",
+    "Process mapping",
+    "Service design",
+    "Service designer",
+    "Customer experience designer",
+    "Customer experience design",
+    "Process design",
     "Workflow Transformation Analyst",
     "Continuous Improvement Manager",
     "Operations Program Manager",
     "Operations Enablement Manager",
     "Delivery Operations Manager",
+    "Continuous Improvement",
+    "Process",
+    "Optimization",
+    "Business Process",
+    "Process Excellence",
     "Business Operations Manager",
     "Business Process Manager",
     "Program Manager Operations",
-    "Senior Program Manager",
     "Operational Excellence Manager",
     "Operational Excellence Lead",
-    "Customer Operations Manager",
     "People Process Optimization Specialist",
+    "Six Sigma",
+    "Lean Six Sigma",
     "Six Sigma Program Manager"
 ]
 
@@ -82,7 +97,6 @@ EXCLUDE_TITLE_TERMS = [
     "software engineer",
     "ml engineer",
     "machine learning engineer",
-    "research scientist",
     "fraud",
 ]
 
