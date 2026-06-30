@@ -28,7 +28,7 @@ TARGET_TITLES = [
     "Process Consultant",
     "Process Optimization Manager",
     "Process Specialist",
-    "Process Optimization Specialist"
+    "Process Optimization Specialist",
     "Process Improvement",
     "Process Optimization",
     "Process Improvement",
@@ -71,10 +71,8 @@ EXCLUDE_TITLE_TERMS = [
     "intern",      # matches "intern"; "internal" is a separate word under whole-word matching
 
     # Executive levels (above where this example search is aimed)
-    "director",
     "vp",
     "vice president",
-    "head of",
     "c-suite",
     "chief",
 
@@ -169,6 +167,7 @@ BROAD_SKILL_KEYWORDS = [
     "Analytics & Reporting",
     "Voice of Customer",
     "Customer Experience",
+    "journey",
     "Agile",
     "Scrum",
     "Tableau",
@@ -187,7 +186,7 @@ BROAD_SKILL_KEYWORDS = [
     "data",
 
 ]
-MIN_BROAD_SKILL_MATCHES = 3
+MIN_BROAD_SKILL_MATCHES = 1
 
 # -----------------------------------------------------------------------------
 # Location filter

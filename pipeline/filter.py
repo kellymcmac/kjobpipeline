@@ -119,6 +119,13 @@ def pre_filter(jobs: list[JobPosting]) -> list[JobPosting]:
             title_drops += 1
             continue
 
+        # LinkedIn leads have no description and no location constraint —
+        # the alert subscription settings act as the location pre-filter.
+        if job.source == "LinkedIn Lead":
+            job.matched_skills = []
+            survivors.append(job)
+            continue
+
         if not passes_location_filter(job):
             location_drops += 1
             continue
