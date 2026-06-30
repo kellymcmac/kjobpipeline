@@ -16,7 +16,7 @@ variables (see README.md / SETUP.md), never from this file.
 # How far back to look for new postings (in days).
 # With daily runs, a 1-day lookback covers everything that arrived since
 # yesterday's run. If a run is ever skipped, jobs from that day are missed.
-LOOKBACK_DAYS = 1
+LOOKBACK_DAYS = 30
 
 # -----------------------------------------------------------------------------
 # Target role titles - matched (whole-word) against the job title.
