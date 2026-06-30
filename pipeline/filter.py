@@ -27,7 +27,7 @@ def _word_match(text_low: str, phrase_low: str) -> bool:
     "sql"). It is deliberately naive: it won't catch irregular plurals, but
     those are rare in the keyword set and a missed Tier 2 hit is low-cost.
     """
-    pattern = r"(?:^|[^a-z0-9])" + re.escape(phrase_low) + r"s?(?:[^a-z0-9]|$)"
+    pattern = r"(?:^|[^a-z0-9])" + re.escape(phrase_low.lower()) + r"s?(?:[^a-z0-9]|$)"
     return bool(re.search(pattern, text_low))
 
 
